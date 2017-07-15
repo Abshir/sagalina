@@ -1,0 +1,40 @@
+Item:
+{
+  "name": "Versace chair",
+  "price": "1199.9",
+  "description": "Hire or buy a luxurious golden coloured chair",
+  "created": //niet meesturen!!! dan wordt de default genomen
+  "updated": //niet meesturen!!! dan wordt de default genomen
+  "enabled": "",
+  "category": "5832007f4e1aa620c4d42749",
+  "length": "0.80",
+  "breadth": "0.75",
+  "heigth": "0.130",
+  "weight": "0.15",
+  "image": "0"
+}
+
+{
+  "name": "ME Curtains",
+  "price": "700",
+  "description": "Middle Eastern flavour in your living room, beautiful blue/white curtains",
+  "created": //niet meesturen!!! dan wordt de default genomen
+  "updated": //niet meesturen!!! dan wordt de default genomen
+  "enabled": "true",
+  "category": "5832007f4e1aa620c4d42749",
+  "length": "",
+  "breadth": "4.5",
+  "heigth": "2.6",
+  "Weigth": "2",
+  "image": "0"
+}
+
+Category:
+{
+  "name": "Events",
+  "description": "Event Furniture & Equipment Hire",
+  "created": //niet meesturen!!! dan wordt de default genomen
+  "updated": //niet meesturen!!! dan wordt de default genomen
+  "enabled": "true",
+  "image": ""
+}
