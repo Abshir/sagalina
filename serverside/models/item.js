@@ -12,8 +12,8 @@ var schema = new mongoose.Schema({
 	description: { type: String, required: true },
 	created: { type: Date, default: Date.now },
 	updated: { type: Date, default: Date.now },
-	height: { type: Number, roundto: 2, required: false }, //Waarom wordt height niet getoond???
-    weight: { type: Number, roundto: 2, required: false }, //Waarom wordt weight niet getoond???
+	height: { type: Number, roundto: 2, required: false }, 
+    weight: { type: Number, roundto: 2, required: false }, 
 	category: { type: ObjectId, ref: "Category", required: true }, /* Object moet gecontroleerd worden!*/
 	enabled: { type: Boolean, default: false, required: true },
     breadth: { type: Number, roundto: 2, required: false },

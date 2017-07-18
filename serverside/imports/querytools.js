@@ -84,6 +84,7 @@ exports.list = function (Model, parsedQuery, fields, options, callback) {
 * @async
 */
 exports.show = function (Model, conditions, fields, options, population, callback) {
+ console.log(population);
 
 	Model
 	.findOne(conditions, fields, options)

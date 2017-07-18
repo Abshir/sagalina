@@ -13,9 +13,9 @@ var schema = new mongoose.Schema({
     created: { type: Date, default: Date.now },
 	updated: { type: Date, default: Date.now },
 	enabled: { type: Boolean, default: false, required: true },
+	category: { type: ObjectId, ref: "Category", required: true }, /* Object moet gecontroleerd worden!*/
 	image: { type: Number, required: false }
 });
-
 
 // UNIQUE CONSTRAINTS
 schema.index(
@@ -26,4 +26,4 @@ schema.index(
 validator.validateLength(schema, 'name', 5, 50);
 validator.validateLength(schema, 'description', 5, 300);
 // EXPORT
-module.exports = mongoose.model('Category', schema);
+module.exports = mongoose.model('subCategory', schema);
