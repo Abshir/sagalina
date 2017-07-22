@@ -12,10 +12,20 @@ var schema = new mongoose.Schema({
 	description: { type: String, required: true },
     created: { type: Date, default: Date.now },
 	updated: { type: Date, default: Date.now },
+	children: [{type: ObjectId, ref: "Category", required: true }],
 	enabled: { type: Boolean, default: false, required: true },
 	image: { type: Number, required: false }
 });
 
+//Children - subcategories
+var autoPopulateChildren = function(next) {
+    this.populate('children');
+    next();
+};
+
+schema
+.pre('findOne', autoPopulateChildren)
+.pre('find', autoPopulateChildren);
 
 // UNIQUE CONSTRAINTS
 schema.index(
